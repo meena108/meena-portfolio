@@ -1,18 +1,126 @@
-/* src/components/Skills.css */
-.skills-container {
+/* General Section Styling */
+#skills {
+  padding: 80px 10%;
+  background: #f9fafc;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 50px;
+}
+
+/* Skills Layout */
+.skills-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+/* Technical & Soft Skills Section */
+.skills-section {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+/* Divider */
+.skills-divider {
+  width: 2px;
+  background: #ccc;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Skills Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Skill Item */
+.skill-item {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
 }
 
-@media (min-width: 768px) {
-  .skills-container {
-    flex-direction: row;
-    justify-content: space-between;
+.skill-item:hover {
+  transform: translateY(-5px);
+}
+
+.skill-item svg {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.skill-item p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Left & Right Section Styling */
+.skills-section.left {
+  text-align: center;
+}
+
+.skills-section.right {
+  text-align: center;
+}
+
+/* Certifications Section */
+.certifications-section {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Certifications List */
+.certifications-list {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.certifications-list li {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #444;
+  padding: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .skills-layout {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
-}
 
-.skill-section ul {
-  list-style: disc inside;
-  padding-left: 20px;
+  .skills-section.left,
+  .skills-section.right {
+    text-align: center;
+  }
+
+  .skills-divider {
+    display: none;
+  }
 }
