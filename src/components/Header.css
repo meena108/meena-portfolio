@@ -1,0 +1,88 @@
+/* Header Container */
+header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 50px;
+  position: relative;
+}
+
+/* Left Section - My Portfolio */
+.header-left h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Right Section - Navigation */
+.header-right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px; /* Space between links */
+}
+
+.header-right ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Hover Effect: No Underline, Change Color */
+.header-right ul li a:hover {
+  color: #ffcc00; /* Change color on hover */
+}
+
+/* Responsive - Hamburger Menu */
+.menu-toggle {
+  display: none; /* Hidden by default */
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  background: #fff;
+  height: 3px;
+  width: 25px;
+  margin: 4px 0;
+  transition: 0.3s;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+    padding: 15px 20px;
+  }
+
+  /* Hide Regular Menu on Small Screens */
+  .header-right {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #222;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  /* Show Menu when Open */
+  .header-right.open {
+    display: flex;
+  }
+
+  /* Mobile Navigation Links */
+  .header-right ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .menu-toggle {
+    display: flex; /* Show hamburger icon */
+  }
+}

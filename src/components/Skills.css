@@ -1,0 +1,18 @@
+/* src/components/Skills.css */
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .skills-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.skill-section ul {
+  list-style: disc inside;
+  padding-left: 20px;
+}

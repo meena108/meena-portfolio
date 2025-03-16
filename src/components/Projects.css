@@ -1,0 +1,5 @@
+/* src/components/Projects.css */
+section ul {
+  list-style: disc inside;
+  padding-left: 20px;
+}

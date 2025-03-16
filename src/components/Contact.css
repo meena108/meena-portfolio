@@ -1,0 +1,131 @@
+/* Contact Section */
+#contact {
+  padding: 80px 20px;
+  background-color: #fff;
+  font-family: sans-serif;
+}
+
+/* FLEX CONTAINER: Keeps Text and Image Side by Side */
+.contact-content {
+  display: flex;
+  align-items: flex-start; /* Aligns heading and image at the top */
+  justify-content: space-between; /* Space between text & image */
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: nowrap; /* Prevents wrapping */
+  gap: 4rem; /* Space between left and right columns */
+}
+
+/* LEFT COLUMN: Contact Text */
+.contact-left {
+  flex: 1;
+  min-width: 450px;
+  padding-right: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Ensures text starts from the top */
+}
+
+/* Header Wrapper */
+.contact-title {
+  margin-bottom: 0.5rem;
+}
+
+/* Header */
+.contact-title h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  text-transform: lowercase;
+  margin: 0.3rem;
+}
+
+/* Paragraph */
+.contact-left p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  color: #444;
+}
+
+/* SOCIAL MEDIA ICONS in 2x2 Grid */
+.social-icons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 1.5rem 2.5rem; /* Space between rows and columns */
+  justify-content: start;
+  align-items: center;
+  width: fit-content;
+  margin-top: 1.5rem;
+}
+
+/* Individual social media items */
+.social-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* Space between icon and text */
+  transition: transform 0.2s;
+}
+
+/* Center Text with Icon */
+.social-item span {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: center;
+  vertical-align: middle;
+  transition: color 0.2s ease-in-out;
+}
+
+/* ICON SIZE */
+.social-item img {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.2s;
+}
+
+/* HOVER EFFECT - Icon scales */
+.social-item:hover img {
+  transform: scale(1.1);
+}
+
+/* MATCH LABEL COLOR TO ICON COLOR */
+.social-item.gmail span {
+  color: #d14836; /* Gmail Red */
+}
+
+.social-item.facebook span {
+  color: #1877f2; /* Facebook Blue */
+}
+
+.social-item.linkedin span {
+  color: #0077b5; /* LinkedIn Blue */
+}
+
+.social-item.instagram span {
+  color: #c13584; /* Instagram Gradient */
+}
+
+/* RIGHT COLUMN: Contact Image */
+.contact-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align image top with heading */
+  max-width: 400px;
+}
+
+/* Contact Image Styling */
+.contact-right img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Paragraph with Intro Class */
+p.intro {
+  font-size: 18px;
+  font-size: 1.6rem;
+  color: #757575;
+  line-height: 1.5;
+  margin-top: 0.3rem;
+}

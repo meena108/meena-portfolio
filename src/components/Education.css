@@ -1,0 +1,139 @@
+/* General Section Styling */
+#education {
+  padding: 100px 10%;
+  background: #f4f7fc;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 50px;
+}
+
+/* Main Container */
+.education-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 50px;
+}
+
+/* Graduation Photos */
+.grad-images {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 350px;
+}
+
+.grad-photo {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.grad-photo:hover {
+  transform: scale(1.05);
+}
+
+/* Education Timeline */
+.education-timeline {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Education Cards */
+.education-card {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.education-card:hover {
+  transform: scale(1.03);
+}
+
+/* Education Header */
+.education-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+/* University Logos */
+.edu-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Text Styling */
+.education-card h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.education-card p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+/* Achievements */
+.education-card ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.education-card ul li {
+  font-size: 1rem;
+  color: #444;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Icon Styling */
+.icon {
+  color: #f4c542;
+  font-size: 1.2rem;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .education-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .grad-images {
+    max-width: 100%;
+  }
+
+  .education-card {
+    text-align: center;
+    padding: 30px;
+  }
+
+  .education-header {
+    justify-content: center;
+  }
+}
