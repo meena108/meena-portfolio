@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import aboutImage from "../assets/about.jpg"; // Ensure correct path
+import aboutImage from "../assets/meena2.PNG"; // Ensure correct path
 
 function About() {
   return (

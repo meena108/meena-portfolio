@@ -8,7 +8,6 @@ function Contact() {
       <div className="contact-content">
         {/* LEFT: Contact Info and Social Media */}
         <div className="contact-left">
-          {/* Title Wrapped in a Div */}
           <div className="contact-title">
             <h1>Contact.</h1>
           </div>
@@ -18,7 +17,6 @@ function Contact() {
             to hear from you!
           </p>
 
-          {/* Social Media Icons Grid */}
           <div className="social-icons">
             <div className="social-item gmail">
               <a
