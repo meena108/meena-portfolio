@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/meena-portfolio/static/css/main.4f063f2e.css",
+    "main.js": "/meena-portfolio/static/js/main.dd10ebe1.js",
+    "static/js/453.02b28188.chunk.js": "/meena-portfolio/static/js/453.02b28188.chunk.js",
+    "static/media/meena2.PNG": "/meena-portfolio/static/media/meena2.d9696fbef49c4d5788ce.PNG",
+    "static/media/contact2.jpeg": "/meena-portfolio/static/media/contact2.cf79fc0f51c3b3c1e95a.jpeg",
+    "static/media/contact.jpeg": "/meena-portfolio/static/media/contact.17641d8ea171e512f4f3.jpeg",
+    "static/media/contact3.jpeg": "/meena-portfolio/static/media/contact3.e6b6886f5b430d0c4183.jpeg",
+    "static/media/ku.png": "/meena-portfolio/static/media/ku.ed7ec6bf87e18f3ebcc6.png",
+    "index.html": "/meena-portfolio/index.html",
+    "main.4f063f2e.css.map": "/meena-portfolio/static/css/main.4f063f2e.css.map",
+    "main.dd10ebe1.js.map": "/meena-portfolio/static/js/main.dd10ebe1.js.map",
+    "453.02b28188.chunk.js.map": "/meena-portfolio/static/js/453.02b28188.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4f063f2e.css",
+    "static/js/main.dd10ebe1.js"
+  ]
+}
